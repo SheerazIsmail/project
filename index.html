@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <center>
+            <h2> Javascript Callback</h2>
+            <p> Do a calculator & then display the result.</p>
+            <p id="result"></p>
+            <script>
+                function myDisplayer(value) {
+                    document.getElementById("result").innerHTML = value;
+                }
+                function myCalculator(num1, num2, myCallback) {
+                    let product = num1 + num2;
+                    myCallback(product) ;
+                }
+                myCalculator(5, 9, myDisplayer);
+
+            </script>
+        </center>
+    </body>
+</html>
